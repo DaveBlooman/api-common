@@ -2,25 +2,11 @@ package logger
 
 import (
 	"net/http"
-	"os"
 
 	"github.com/Sirupsen/logrus"
 )
 
 var log = logrus.New()
-
-// Init is used to bootstrap the requirements for this package
-func Init() {
-	log.Formatter = new(logrus.JSONFormatter)
-
-	if env := os.Getenv("APP_ENV"); env == "test" {
-		f, e := os.Create("../../tests.log")
-		if e != nil {
-			log.Fatal("Failed to create log file for whilst tests are running")
-		}
-		log.Out = f
-	}
-}
 
 // Log is a HTTP logger abstraction
 func Log(inner http.Handler, name string) http.Handler {
