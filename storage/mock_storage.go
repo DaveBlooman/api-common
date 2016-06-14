@@ -1,6 +1,6 @@
 package storage
 
-import "github.com/stretchr/testify/mock"
+import "github.com/DaveBlooman/api-common/Godeps/_workspace/src/github.com/stretchr/testify/mock"
 
 // MockStorage mock
 type MockStorage struct {

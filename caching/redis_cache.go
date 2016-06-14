@@ -5,7 +5,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/garyburd/redigo/redis"
+	"github.com/DaveBlooman/api-common/Godeps/_workspace/src/github.com/garyburd/redigo/redis"
 )
 
 // RedisCache setup

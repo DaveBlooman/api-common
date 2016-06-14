@@ -3,7 +3,7 @@ package logger
 import (
 	"net/http"
 
-	"github.com/Sirupsen/logrus"
+	"github.com/DaveBlooman/api-common/Godeps/_workspace/src/github.com/Sirupsen/logrus"
 )
 
 var log = logrus.New()

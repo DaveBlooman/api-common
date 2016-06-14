@@ -3,7 +3,7 @@ package caching
 import (
 	"time"
 
-	"github.com/stretchr/testify/mock"
+	"github.com/DaveBlooman/api-common/Godeps/_workspace/src/github.com/stretchr/testify/mock"
 )
 
 // MockCache setup
