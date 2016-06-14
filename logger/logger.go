@@ -10,6 +10,7 @@ var log = logrus.New()
 
 // Log is a HTTP logger abstraction
 func Log(inner http.Handler, name string) http.Handler {
+	log.Formatter = new(logrus.JSONFormatter)
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		log.WithFields(logrus.Fields{
 			"url":    r.RequestURI,
